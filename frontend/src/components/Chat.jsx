@@ -4,7 +4,7 @@ import ChatIn from "./ChatInput.jsx";
 import MessageList from "./MessageList.jsx";
 import "./Chat.css";
 
-const socket = io( process.env.REACT_APP_SOCKET_URL ||"http://localhost:3001");
+const socket = io( process.env.REACT_APP_SOCKET_URL);
 
 function Chat() {
   const [messages, setMessages] = useState([]);
