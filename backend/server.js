@@ -2,9 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
 const http = require('http');
-const { Server } = require('socket.io');
 const { addmessage } = require("./controllers/messagecontroller.js");
-
+const { Server } = require("socket.io");
 dotenv.config();
 
 const app = express();
